@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="X-Salada da casa"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#1F3864" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pão brioche, hambúrguer 180g, queijo, alface e tomate."
+        android:textSize="14sp"
+        android:textColor="#757575" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="R$ 24,90"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#2E7D32" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp"
+        android:background="#E0E0E0" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Escolha o tamanho:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/grpTamanho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rdbPequeno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pequeno" />
+
+        <RadioButton
+            android:id="@+id/rdbMedio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Médio"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/rdbGrande"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grande" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Adicionais:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/chkBacon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bacon" />
+
+    <CheckBox
+        android:id="@+id/chkQueijo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Queijo extra" />
+
+    <CheckBox
+        android:id="@+id/chkOvo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ovo" />
+
+    <EditText
+        android:id="@+id/edtObservacoes"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="12dp"
+        android:hint="Observações do pedido"
+        android:inputType="textMultiLine"
+        android:gravity="top" />
+
+    <Button
+        android:id="@+id/btnAdicionar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Adicionar ao carrinho"
+        android:textAllCaps="false"
+        android:backgroundTint="#E65100" />
+
+</LinearLayout>

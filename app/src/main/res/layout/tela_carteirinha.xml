@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F7FA"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Marina Alves Ferreira"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#1F3864"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Desenvolvimento de Sistemas"
+        android:textSize="14sp"
+        android:textColor="#616161"
+        android:gravity="center" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"
+        android:background="#D5DCE5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="RM:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20250147" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Turma:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2º módulo - B" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Período:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Noite" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#D5DCE5" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Frequência nas aulas"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="87% - situação regular"
+        android:textSize="14sp"
+        android:textColor="#2E7D32" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
+
+    <Button
+        android:id="@+id/btnBoletim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver boletim"
+        android:textAllCaps="false"
+        android:backgroundTint="#1F3864" />
+
+    <Button
+        android:id="@+id/btnSair"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Sair da conta"
+        android:textAllCaps="false"
+        android:backgroundTint="#9E9E9E" />
+
+</LinearLayout>
