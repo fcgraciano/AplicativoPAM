@@ -34,5 +34,32 @@
         android:textSize="50sp"
         android:textAlignment="center"/>
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtPeso"
+        android:hint="Digite seu peso"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtAltura"
+        android:inputType="numberDecimal"
+        android:hint="Digite sua Altura" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular IMC"
+        android:id="@+id/btnCalcularIMC"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/txtExercicio2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:textAlignment="center"
+        />
 
 </LinearLayout>

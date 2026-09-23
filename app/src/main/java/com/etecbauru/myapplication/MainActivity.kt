@@ -8,6 +8,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import org.w3c.dom.Text
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,5 +30,34 @@ class MainActivity : AppCompatActivity() {
            resultado.text = "Média é" + media
 
         }
+
+        val peso = findViewById<EditText>(R.id.edtPeso)
+        val altura = findViewById<EditText>(R.id.edtAltura)
+        val botaoIMC = findViewById<Button>(R.id.btnCalcularIMC)
+        val resultadoIMC = findViewById<TextView>(R.id.txtExercicio2)
+
+        botaoIMC.setOnClickListener {
+            val p = peso.text.toString().toDouble()
+            val a = altura.text.toString().toDouble()
+
+            //peso / (altura * altura)
+            val imc = p / ( a * a)
+
+            if(imc < 18.5)
+            {
+                resultadoIMC.text = imc.toString() + " Abaixo do peso"
+            }
+            else if( imc >= 18.5 && imc <= 24.9)
+            {
+                resultadoIMC.text = imc.toString() +" Peso normal"
+            }
+            else if( imc >= 25 && imc <= 29.9)
+            {
+                resultadoIMC.text = imc.toString() +" Sobrepeso"
+            }else{
+                resultadoIMC.text = imc.toString() +" Obesidade"
+            }
+        }
+
     }
 }
