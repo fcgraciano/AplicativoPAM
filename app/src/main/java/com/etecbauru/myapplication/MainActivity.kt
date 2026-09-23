@@ -13,8 +13,18 @@ import org.w3c.dom.Text
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.aulaid)
+        setContentView(R.layout.exercicio_nota)
 
+        val botaoExec1 = findViewById<Button>(R.id.btnExec1)
+        val edtExec1 = findViewById<EditText>(R.id.edtExec1)
+        val txtExec1 = findViewById<TextView>(R.id.txtExec1)
+        botaoExec1.setOnClickListener {
+            var numero = edtExec1.text.toString().toInt() * 2
+            txtExec1.text = numero.toString()
+        }
+
+
+        /*
         val notapP1 = findViewById<EditText>(R.id.edtNota1)
         val notapP2 = findViewById<EditText>(R.id.edtNota2)
         val resultado = findViewById<TextView>(R.id.txtResultado)
@@ -58,6 +68,6 @@ class MainActivity : AppCompatActivity() {
                 resultadoIMC.text = imc.toString() +" Obesidade"
             }
         }
-
+        */
     }
 }
