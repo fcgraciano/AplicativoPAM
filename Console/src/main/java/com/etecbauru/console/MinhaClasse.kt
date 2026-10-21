@@ -3,8 +3,48 @@ package com.etecbauru.console
 class MinhaClasse {
 }
 
-fun main(){
+class Carta(val valor: String, val naipe: String) {
+    fun virar() {
+        println("$valor de $naipe")
+    }
+}
 
+fun main(){
+    val carta01 = Carta("A","Ouros")
+    println(carta01.valor)
+    carta01.virar()
+
+
+
+
+    /*
+    print("Digite um número: ")
+    val numero = readln().toIntOrNull()
+    if (numero != null) {
+        println("Dobro: ${numero * 2}")
+    } else {
+        println("Isso não é um número.")
+    }
+*/
+
+    /*
+    val Idade = Subtrair(2026,1990)
+    val nota = Subtrair(10,7)
+    print("Digite a mencao da prova")
+    val prova = readln().toString()
+
+    print("Digite a mencao do projeto")
+    val projeto = readln().toString()
+
+    print("Digite a mencao da atividade")
+    val atividade = readln().toString()
+
+    MediaEtec(atividade,projeto,prova)
+    */
+
+
+
+    /*
     val mao = mutableListOf<String>()
     mao.add("2 de Ouro")
     mao.add("4 de espada")
@@ -19,7 +59,7 @@ fun main(){
         }
     }
 
-
+*/
 
     /*
     println("Digite sua nota")
@@ -90,4 +130,25 @@ fun main(){
        println("Reprovou")
    }
    */
+}
+fun MediaEtec(mencaoAtividade : String, mencaoProjeto: String, mencaoProva: String)
+{
+    if( mencaoProva == "MB"  &&
+        (mencaoProjeto == "MB" || mencaoAtividade == "MB") )
+    {
+        print("Aluno fica com MB")
+    }else if( mencaoProva == "B" || ( mencaoProjeto == "MB" && mencaoAtividade == "MB" ) )
+    {
+        print("Aluno fica com MB")
+    }
+    else if(mencaoProva == "B" && ( mencaoProjeto == "B" || mencaoAtividade == "B" ) )
+    {
+        print("Aluno fica com B")
+    }
+    else if(mencaoProva == "B" && ( mencaoProjeto == "R" && mencaoAtividade == "R" ) ){
+        print("Aluno fica com R")
+    }
+    else{
+        print("Aluno fica com I")
+    }
 }
